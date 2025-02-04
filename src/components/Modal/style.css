@@ -1,0 +1,73 @@
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a94;
+    width: 100%;
+    height: 100%;
+}
+.modal-content {
+    background-image: url("../../images/subscribe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 70%;
+    position: relative;
+}
+.modal-cover {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.modal-btn-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 20px;
+}
+.modal-text {
+    padding: 0 20px 30px 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 5px 5px 8px #000000;
+}
+
+@media screen and (max-width: 1100px) {
+.modal-content {
+    width: 70%;
+    height: 60%;
+}
+}
+
+@media screen and (max-width: 540px) {
+.modal-content {
+    width: 85%;
+    height: 60%;
+}
+.modal-text {
+    font-size: 30px;
+}
+.close-modal {
+    font-size: 30px;
+}
+}
