@@ -1,0 +1,41 @@
+.carousel-wrapper {
+    width: 90%;
+    max-width: 1300px;
+    margin: 40px auto;
+}
+.slide-content {
+    text-align: center;
+    position: relative;
+}
+.slide-img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+.text-overlay {
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 30px;
+    border-radius: 8px;
+}
+.text-overlay h3 {
+    font-size: 26px;
+    margin: 0;
+}
+.text-overlay p {
+    font-size: 18px;
+    margin: 0;
+}
+.swiper-button-next, .swiper-button-prev {
+    color: #232323 !important;
+}
+
+@media screen and (max-width: 420px) {
+    .text-overlay {
+        padding: 5px;
+    }
+}

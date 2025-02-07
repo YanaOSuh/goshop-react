@@ -1,6 +1,6 @@
-import './style.css';
+import './modal.css';
 import closeIcon from '../../images/closeIcon.png'
-import Form from '../Form';
+import Form from '../Form/Form';
 
 const Content = ({ setModalOpen }) => {
     return(

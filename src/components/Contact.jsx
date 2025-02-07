@@ -1,9 +1,9 @@
-import Footer from "./Footer";
-import Newsletter from "./Newsletter";
+import Footer from "./Footer/Footer";
+import Newsletter from "./Form/Newsletter";
 
 function Contact() {
     return(
-        <div className="contactSection">
+        <section className="contactSection">
             <div className="contactCover">
                 <div className="contactContent">
                     <p className="newsletter-header">NEWSLETTER</p>
@@ -12,7 +12,7 @@ function Contact() {
                 </div>
             </div>
             <Footer />
-        </div>
+        </section>
     )
 }
 export default Contact;

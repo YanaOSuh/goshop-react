@@ -1,16 +1,17 @@
-import heroPic from '../images/hero-pic.png';
+import heroPic from '../../images/hero-pic.png';
 import { Link } from 'react-router-dom';
-import CarouselHome from './CarouselHome';
+import CarouselHome from '../Carousel/CarouselHome';
+import './hero.css';
 
 function Home() {
-    return(<div className='heroSection'>
+    return(<section className='heroSection'>
         <div className='heroContainer'>
             <div className='heroTextBox'>
                 <p className='upHeadingText'>2025 COLLECTION</p>
                 <h1 className='heroHeading'>New Arrivals</h1>
                 <p className='heroText'>Discover the latest trends in clothing from top fashion brands - elevate your wardrobe today!</p>
-                <Link to={`/catalog`}>
-                    <button className='heroBtn'>SHOP NOW</button>
+                <Link to={`/catalog`} className='heroBtn'>
+                    SHOP NOW
                 </Link>
             </div>
             <div className='heroPicBox'>
@@ -25,7 +26,7 @@ function Home() {
             </div>
         </div>
         <CarouselHome />
-        </div>
+        </section>
     )
 }
 export default Home;

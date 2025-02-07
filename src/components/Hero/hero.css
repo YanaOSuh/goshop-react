@@ -1,0 +1,149 @@
+.heroSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heroContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1184px;
+    margin-top: 50px;
+    gap: 20px;
+}
+.heroTextBox {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.upHeadingText {
+    font-size: 18px;
+    padding-bottom: 10px;
+    color: #232323;
+}
+.heroHeading {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 1;
+    color: #232323;
+}
+.heroText {
+    margin-top: 24px;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #8b8b8b;
+}
+.heroBtn {
+    margin: 24px 0 0 0;
+    border: none;
+    outline: none;
+    padding: 12px 36px;
+    width: 200px;
+    height: 60px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: -0.02em;
+    background-color: #e08cff;
+    color: #232323;
+    cursor: pointer;
+}
+.heroBtn:hover {
+    filter: brightness(90%);
+}
+.running-line-wrapper {
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    padding: 40px 0;
+}
+.running-line {
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px #4a4a4a;
+    white-space: nowrap;
+}
+.running-line {
+    animation: run 20s linear infinite;
+}
+@keyframes run {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-1683.35px);
+    }
+}
+
+@media (max-width: 1110px) {
+    .heroTextBox {
+        width: 500px;
+    }
+}
+
+@media (max-width: 910px) {
+    .heroContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .heroTextBox {
+        width: 80%;
+    }
+    .heroPicBox {
+        align-self: flex-end;
+        margin-right: 100px;
+        margin-top: -100px;
+    }
+    .heroBtn {
+        margin: 40px 0 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .heroHeading {
+        font-size: 80px;
+    }
+    .heroPicBox {
+        margin-right: 80px;
+        margin-top: -60px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .heroHeading {
+        font-size: 60px;
+    }
+    .heroBtn {
+        margin: 20px 0 0 0;
+    }
+    .heroPic {
+        width: 350px;
+    }
+    .heroPicBox {
+        margin-right: 50px;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .running-line {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .heroPicBox {
+        margin-right: 10px;
+    }
+    .heroPic {
+        width: 320px;
+    }
+    .running-line-wrapper {
+        padding: 30px 0;
+    }
+}

@@ -1,23 +1,25 @@
 import { useState } from "react";
-import { data } from "../data";
+import { data } from "../data/data";
 import Clothes from "./Clothes";
 import Buttons from "./Buttons";
-import Footer from "./Footer";
+import Footer from "./Footer/Footer";
 
 function Catalog() {
     const [clothes, setClothes] = useState(data);
 
     return(
-        <div>
-        <div className="shopSection">
-            <div className='cont'>
-                <h2 className='back'>Free Standard Shipping</h2>
+        <section className="catalogSection">
+            <div className="shopSection">
+                <div className='shopSection-container'>
+                    <h2 className='shopSection-heading'>
+                        Free Standard Shipping
+                    </h2>
+                </div>
+                <Buttons setClothes={setClothes} />
+                <Clothes itemsForSale={clothes} />
             </div>
-            <Buttons setClothes={setClothes} />
-            <Clothes itemsForSale={clothes} />
-        </div>
-        <Footer />
-        </div>
+            <Footer />
+        </section>
     )
 }
 

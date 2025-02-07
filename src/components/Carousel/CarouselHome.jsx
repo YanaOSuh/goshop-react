@@ -2,21 +2,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import carouselOne from '../images/carouselOne.jpg';
-import carouselTwo from '../images/carouselTwo.jpg';
-import carouselThree from '../images/carouselThree.jpg';
-import carouselFour from '../images/carouselFour.jpg';
-import carouselFive from '../images/carouselFive.jpg';
+import './carousel.css';
+import dataCarousel from '../../data/dataCarousel';
 
-function CarouselHome() {
-    const slides = [
-        { image: carouselOne, title: "Summer Vibes", text: "Fresh looks for sunny days" },
-        { image: carouselTwo, title: "Urban Fashion", text: "Trendy city wear" },
-        { image: carouselThree, title: "Casual", text: "Comfort meets elegance" },
-        { image: carouselFour, title: "Sportswear", text: "Stay active in style" },
-        { image: carouselFive, title: "Beach mood", text: "Stylish trends" }
-    ];
-
+const CarouselHome = () => {
     return (
         <div className="carousel-wrapper">
         <Swiper
@@ -35,8 +24,8 @@ function CarouselHome() {
                 },
             }}
         >
-        {slides.map((slide, index) => (
-            <SwiperSlide key={index}>
+        {dataCarousel.map((slide) => (
+            <SwiperSlide key={slide.id}>
                 <div className="slide-content">
                     <img src={slide.image} alt={slide.title} className="slide-img" />
                 <div className="text-overlay">

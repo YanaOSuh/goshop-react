@@ -1,4 +1,4 @@
-import { data } from "../data";
+import { data } from "../data/data";
 
 function Buttons({setClothes}) {
 
@@ -9,13 +9,13 @@ function Buttons({setClothes}) {
 
     return(
         <div>
-            <div className='cont'>
+            <div className='shopSection-container'>
                 <button className='change' onClick={() => filteredClothes('dress')}>Dresses</button>
                 <button className='change' onClick={() => filteredClothes('shorts')}>Shorts</button>
                 <button className='change' onClick={() => filteredClothes('jeans')}>Jeans</button>
                 <button className='change' onClick={() => filteredClothes('bag')}>Bags</button>
             </div>
-            <div className='cont'>
+            <div className='shopSection-container'>
                 <button className='change' onClick={() => filteredClothes('woman')}>Woman</button>
                 <button className='change' onClick={() => filteredClothes('man')}>Man</button>
                 <button className='change' onClick={() => setClothes(data)}>Show All</button>

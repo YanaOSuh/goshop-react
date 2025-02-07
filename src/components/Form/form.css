@@ -1,0 +1,121 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+    margin: 0px 0px 40px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.form-input {
+    padding: 7px 10px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    width: 300px;
+    border: 2px solid #ffffff;
+    color: #232323;
+    box-shadow: 0px -2px 23px -6px #232323 inset;
+}
+.form-btn {
+    padding: 7px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+.form-btn:hover {
+    color: #ffffff;
+    background-color: #232323;
+}
+.form-label {
+    font-family: "Poppins", sans-serif;
+    color:#232323;
+    text-shadow: 3px 3px 5px #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    transform: scale(1.1);
+    animation: pulse 4s infinite;
+    text-align: center;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(0.95);
+    }
+}
+
+.newsletter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.newsletter-input {
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    width: 300px;
+    border: 2px solid #ffffff;
+    color: #232323;
+    box-shadow: 0px -2px 23px -6px #232323 inset;
+}
+.newsletter-btn {
+    border: none;
+    outline: none;
+    padding: 6px 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    background-color: #e08cff;
+    color: #232323;
+    cursor: pointer;
+}
+.newsletter-btn:hover {
+    filter: brightness(90%);
+}
+.newsletter-label {
+    font-family: "Poppins", sans-serif;
+    color:#232323;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #e08cff;
+}
+
+@media (max-width: 768px) {
+    .newsletter-text {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .form-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .newsletter-label {
+        width: 270px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .newsletter-container {
+        gap: 40px;
+    }
+    .newsletter-input {
+        width: 250px;
+    }
+}

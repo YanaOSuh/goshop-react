@@ -1,4 +1,4 @@
-import { data } from "../data";
+import { data } from "../data/data";
 import { useParams, useNavigate } from "react-router-dom";
 
 function ClothesItem() {
@@ -6,7 +6,7 @@ function ClothesItem() {
     const { title } = useParams();
 
     return (
-        <div className="aboutProductSection">
+        <section className="aboutProductSection">
             {data.filter((item) => item.title === title).map((elem, index) => {
                 return (
                     <div key={index} className="aboutProductContainer">
@@ -26,7 +26,7 @@ function ClothesItem() {
                     </div>
                 );
             })}
-        </div>
+        </section>
     );
 }
 export default ClothesItem;

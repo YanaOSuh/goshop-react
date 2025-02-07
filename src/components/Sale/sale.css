@@ -1,0 +1,115 @@
+.saleSection-cover {
+    background-image: url('/src/images/footerPic.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 512px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.saleSection-block {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+}
+.saleSection-saleText {
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #FCF7F1;
+    font-family: "Poppins", sans-serif;
+}
+.saleSection-saleOff {
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #FCF7F1;
+}
+.selesSection-btn-cont {
+    padding: 10px;
+}
+.saleSection-btn {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+.saleSection-btn:hover {
+    color: rgb(251, 216, 216);
+}
+.advantagesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin: 100px 0;
+}
+.advantage-icon {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    transition: all 600ms ease-in-out 0s;
+} 
+.advantage-icon:hover {
+    transform: rotateY(360deg);
+}
+.advantage-block {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 300px;
+    padding: 20px;
+}
+h5 {
+    font-size: 18px;
+    color: #232323;
+}
+.advantages-text {
+    color: #4a4a4a;
+}
+
+@media (max-width: 768px) {
+    .saleSection-block {
+        margin-left: 30px;
+    }
+    .saleSection-saleOff {
+        font-size: 70px;
+    }
+    .saleSection-saleText {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .saleSection-cover {
+        background-position: 25%;
+    }
+    .saleSection-block {
+        margin-left: 20px;
+    }
+    .advantagesContainer {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .saleSection-saleOff {
+        font-size: 60px;
+    }
+    .saleSection-saleText {
+        font-size: 28px;
+    }
+    .saleSection-btn {
+        font-size: 22px;
+    }
+}

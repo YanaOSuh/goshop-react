@@ -1,4 +1,4 @@
-import './style.css';
+import './modal.css';
 
 const Modal = ({ setModalOpen, children }) => {
 
@@ -7,7 +7,6 @@ const closeModal = e => {
         setModalOpen(false)
     }
 }
-
     return(
         <div className='modal'>
             <div className='overlay' onClick={closeModal}>

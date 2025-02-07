@@ -2,18 +2,21 @@ import { Link } from 'react-router-dom';
 import iconSupport from '/src/images/iocn-support.png';
 import iconDelivery from '/src/images/icon-delivery.png';
 import iconMoney from '/src/images/icon-money.png';
-import Footer from './Footer';
+import Footer from '../Footer/Footer';
+import './sale.css';
 
 function Sale() {
     return(
-    <div>
-        <div className='saleSection'>
+    <section className='salesSection'>
+        <div className='saleSection-cover'>
             <div className='saleSection-block'>
                 <p className='saleSection-saleText'>Limited edition</p>
                 <p className='saleSection-saleOff'>50% off</p>
-                <Link to={`/catalog`}>
-                    <button className='saleSection-btn'>see all collection</button>
+                <div className='selesSection-btn-cont'>
+                <Link to={`/catalog`} className='saleSection-btn'>
+                    see all collection
                 </Link>
+                </div>
             </div>
         </div>
         <div className='advantagesContainer'>
@@ -40,7 +43,7 @@ function Sale() {
             </div>
         </div>
         <Footer />
-    </div>
+    </section>
     )
 }
 export default Sale;
