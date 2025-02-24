@@ -14,7 +14,7 @@ import Content from './components/Modal/Content';
 import ClothesItem from './components/CatalogItems/ClothesItem';
 import Navbar from './components/Navbar/Navbar';
 import Cart from './components/Cart/Cart';
-import Wishlist from './components/Wishlist/wishlist';
+import Wishlist from './components/Wishlist/Wishlist';
 
 
 function App() {
@@ -41,7 +41,7 @@ function App() {
       <Route path='/contact' element = {<Contact />} />
       <Route path='/product/:id' element={<ClothesItem />} />
       <Route path="/cart" element={<Cart />} />
-      <Route path="/wishlist" element={<Wishlist/>} />
+      <Route path="/wishlist" element={<Wishlist />} />
     </Routes>
     </Router>
 }
