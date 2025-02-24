@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Routes,
@@ -9,29 +9,18 @@ import Sale from './components/Sale/Sale';
 import Contact from './components/Contact';
 import Catalog from './components/Catalog';
 import Home from './components/Hero/Home';
-import Modal from './components/Modal/Modal';
-import Content from './components/Modal/Content';
 import ClothesItem from './components/CatalogItems/ClothesItem';
 import Navbar from './components/Navbar/Navbar';
 import Cart from './components/Cart/Cart';
 import Wishlist from './components/Wishlist/Wishlist';
+import ModalController from './components/Modal/ModalController';
 
 
 function App() {
-  const [isModalOpen, setModalOpen] = useState(false);
-
-  useEffect(() => {
-    const modalTimer = setTimeout(() => setModalOpen(true),7000);
-    return () => clearTimeout(modalTimer)
-  }, [])
   
   return <Router>
     <div>
-      {isModalOpen &&
-      <Modal setModalOpen={setModalOpen} >
-        <Content setModalOpen={setModalOpen} />
-      </Modal>
-      }
+      <ModalController />
     </div>
     <Navbar />
     <Routes>
