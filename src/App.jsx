@@ -11,8 +11,10 @@ import Catalog from './components/Catalog';
 import Home from './components/Hero/Home';
 import Modal from './components/Modal/Modal';
 import Content from './components/Modal/Content';
-import ClothesItem from './components/ClothesItem';
+import ClothesItem from './components/CatalogItems/ClothesItem';
 import Navbar from './components/Navbar/Navbar';
+import Cart from './components/Cart/Cart';
+import Wishlist from './components/Wishlist/wishlist';
 
 
 function App() {
@@ -37,7 +39,9 @@ function App() {
       <Route path='/catalog' element = {<Catalog />} />
       <Route path='/sale' element = {<Sale />} />
       <Route path='/contact' element = {<Contact />} />
-      <Route path='/about/:title' element={<ClothesItem />} />
+      <Route path='/product/:id' element={<ClothesItem />} />
+      <Route path="/cart" element={<Cart />} />
+      <Route path="/wishlist" element={<Wishlist/>} />
     </Routes>
     </Router>
 }

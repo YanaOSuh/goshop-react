@@ -15,6 +15,7 @@
 .bi {
     cursor: pointer;
     transition: 0.3s ease;
+    color: #232323;
 }
 .bi:hover {
     color: #e08cff;
@@ -66,6 +67,26 @@
     gap: 1.5rem;
     font-size: 24px;
     color: #232323;
+}
+.nav-icon {
+    position: relative;
+    display: inline-block;
+}
+.nav-badge {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background: #e08cff;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
 }
 .burger {
     display: none;

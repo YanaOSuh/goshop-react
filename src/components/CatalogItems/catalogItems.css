@@ -1,0 +1,203 @@
+.productsSection {
+    margin-bottom: 100px;
+}
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.product-card {
+    padding: 30px;
+    flex-basis: 16%;
+}
+.product-card img {
+    width: 350px;
+}
+
+.aboutProductSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 100px;
+}
+.aboutProductContainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+.aboutProduct-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    width: 350px;
+}
+.aboutProductContainer h3{
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #232323;
+    text-decoration: overline;
+    text-decoration-color: #e08cff;
+    margin-bottom: 10px;
+}
+.aboutProductPrice {
+    font-size: 22px;
+    color: #232323;
+    margin-bottom: 1rem;
+}
+.aboutProductDescription {
+    color: #777777;
+    margin: 20px 0 40px;
+}
+.addToCart-btn {
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    background: transparent;
+    outline: none;
+    border: 1px solid #232323;
+    color: #232323;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 50px;
+}
+.addToCart-btn:hover {
+    color: #ffffff;
+    background-color: #232323;
+}
+.addToCart-btn.in-cart {
+    color: #ffffff;
+    background-color: #232323;
+}
+.quantity-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.quantity-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.quantity {
+    font-size: 20px;
+    color: #232323;
+    font-weight: bold;
+    font-family: "Poppins", serif;
+    margin: 0px 20px;
+    align-self: center;
+}
+.btn-plus-minus {
+    color:#232323;
+    font-family: "Poppins", serif;
+    background-color: #e5e4e2;
+    border: none;
+    outline: none;
+    padding: 0px 15px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+}
+.heart-icon-wrapper {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.tooltip {
+    visibility: hidden;
+    background-color: #e08cff;
+    color: #232323;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    position: absolute;
+    bottom: 110%;
+    left: 0;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1;
+}
+.heart-icon-wrapper:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+.goBack-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 2px solid #e08cff;
+    padding: 5px 15px;
+    margin: 0px;
+    width: 50%;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    color: #e08cff;
+    font-family: "Poppins", sans-serif;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.goBack-btn:hover {
+    background-color: #e08cff;
+    color: #232323;
+}
+.arrow-icon {
+    width: 16px;
+    height: 16px;
+    fill: #e08cff;
+    transition: fill 0.3s ease;
+}
+.goBack-btn:hover .arrow-icon {
+    fill: #232323;
+}
+
+@media screen and (max-width: 1024px) {
+    .aboutProductSection {
+        padding: 50px 20px;
+    }
+}
+@media (max-width: 768px) {
+    .aboutProductSection {
+        padding: 30px 15px;
+    }
+    .aboutProductContainer {
+        flex-direction: column;
+    }
+    .aboutProduct-picContainer {
+        align-self: center;
+    }
+    .aboutProductDescription {
+        margin: 10px 0 30px;
+    }
+    .addToCart-btn {
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .product-card img {
+        width: 300px;
+        height: revert;
+    }
+    .aboutProductContainer img{
+        width: 300px;
+    }
+    .aboutProductContainer h3 {
+        font-size: 25px;
+    }
+    .aboutProductPrice {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .aboutProductContainer img {
+        width: 300px;
+    }
+}

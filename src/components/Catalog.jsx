@@ -1,11 +1,8 @@
-import { useState } from "react";
-import { data } from "../data/data";
-import Clothes from "./Clothes";
-import Buttons from "./Buttons";
 import Footer from "./Footer/Footer";
+import AllCategories from "./Filter/AllCategories";
+import Clothes from "./CatalogItems/Clothes";
 
-function Catalog() {
-    const [clothes, setClothes] = useState(data);
+const Catalog = () => {
 
     return(
         <section className="catalogSection">
@@ -15,8 +12,8 @@ function Catalog() {
                         Free Standard Shipping
                     </h2>
                 </div>
-                <Buttons setClothes={setClothes} />
-                <Clothes itemsForSale={clothes} />
+                <AllCategories />
+                <Clothes />
             </div>
             <Footer />
         </section>
