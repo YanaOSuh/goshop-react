@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import './wishlist.css';
 import WishlistItem from './WishlistItem';
 import { useSelector } from 'react-redux';
